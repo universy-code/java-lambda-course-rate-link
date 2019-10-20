@@ -67,7 +67,7 @@ public class StudentCourseRateModifyConsumer extends ModifyConsumer<StudentCours
         }
 
         if (oldItem.wouldTakeAgain()) {
-            instRate.decrementWouldNotTakeAgain();
+            instRate.decrementWouldTakeAgain();
         } else {
             instRate.decrementWouldNotTakeAgain();
         }

@@ -65,7 +65,7 @@ public class InstitutionCourseRate {
     }
 
     public void decrementWouldNotTakeAgain() {
-        this.wouldNotTakeAgain++;
+        this.wouldNotTakeAgain--;
     }
 
 

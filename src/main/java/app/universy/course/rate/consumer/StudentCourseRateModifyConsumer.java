@@ -93,6 +93,7 @@ public class StudentCourseRateModifyConsumer extends ModifyConsumer<StudentCours
 
         courseRate.setTagsRate(institutionTags.entrySet()
                 .stream()
+                .filter((e) -> e.getValue() > 0)
                 .map((e) -> new TagRate(e.getKey(), e.getValue()))
                 .collect(Collectors.toList()));
     }
